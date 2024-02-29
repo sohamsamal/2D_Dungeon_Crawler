@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@drawable/gamescreen2"
+    android:gravity="center">
+
+    <ProgressBar
+        android:id="@+id/healthBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="100"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/characterSprite"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/playerName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:src="@drawable/white_char_transparent" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:fontFamily="@font/confession_font"
+        android:layout_margin="15dp"
+        android:text="Score:"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/roomName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/confession_font"
+        android:text="Dungeon 2"
+        android:textColor="@android:color/white"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/PowerUpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:fontFamily="@font/confession_font"
+        android:layout_margin="15dp"
+        android:text="Powerups: "
+        android:textColor="#FFFFFF"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/wall1"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="170dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/wall2" />
+
+    <ImageView
+        android:id="@+id/wall2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="215dp"
+        android:layout_marginTop="430dp"
+        app:srcCompat="@drawable/wall2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="610dp"
+        app:srcCompat="@drawable/door" />
+
+    <ImageView
+        android:id="@+id/monster_1"
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="500dp"
+        app:srcCompat="@drawable/zombie_mon" />
+
+    <ImageView
+        android:id="@+id/monster_2"
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="200dp"
+        app:srcCompat="@drawable/mummy" />
+
+    <ImageView
+        android:id="@+id/health_powerup"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="400dp"
+        app:srcCompat="@drawable/health_powerup" />
+        
+    <ImageView
+        android:id="@+id/indicator"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginTop="200dp"
+        app:srcCompat="@drawable/basic_red_dot" />
+
+    <ImageView
+        android:id="@+id/slash"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginTop="200dp"
+        app:srcCompat="@drawable/slash" />
+</FrameLayout>

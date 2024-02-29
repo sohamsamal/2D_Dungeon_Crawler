@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="#556472"
+    android:gravity="center">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dungeon_escape_title" />
+
+    <Button
+        android:layout_width="294dp"
+        android:layout_height="87dp"
+        android:backgroundTint="#B079DC"
+        android:onClick="startGame"
+        android:shadowColor="@android:color/black"
+        android:text="Start"
+        android:fontFamily="@font/confession_font"
+        android:textColor="@android:color/white"
+        android:textSize="32sp" />
+    <Button
+        android:layout_width="294dp"
+        android:layout_height="87dp"
+        android:backgroundTint="#B079DC"
+        android:onClick="exitGame"
+        android:shadowColor="@android:color/black"
+        android:text="Exit Game"
+        android:fontFamily="@font/confession_font"
+        android:textColor="@android:color/white"
+        android:textSize="32sp" />
+</LinearLayout>

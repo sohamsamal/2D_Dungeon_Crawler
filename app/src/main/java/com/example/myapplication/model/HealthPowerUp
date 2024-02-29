@@ -1,0 +1,11 @@
+public class HealthPowerUp extends CharacterDecorator {
+    public HealthPowerUp(Character tempCharacter) {
+        super(tempCharacter);
+    }
+
+    @Override
+    public void performAction() {
+        tempCharacter.performAction();
+        System.out.println("Health power-up activated");
+    }
+}
